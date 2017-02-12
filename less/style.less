@@ -192,7 +192,7 @@ header {
         height: 100%;
         top: 0;
         left: 0;
-        background: rgba(0,0,0,0.3);
+        background: rgba(0,0,0,0.4);
     }
 
     .header-content {
@@ -204,9 +204,12 @@ header {
             .supraHeading {
                 .sans-serif-font;
                 font-size: 20px;
-                margin-bottom: 10px;
-                .featured {
+                margin-bottom: 20px;
+                .supra {
+                    font-size: 20px;
                     display: block;
+                }
+                .infra {
                     font-size: 24px;
                 }
             }
@@ -225,7 +228,7 @@ header {
                 font-weight: 300;
                 color: fade(white, 70%);
                 font-size: 16px;
-                margin-bottom: 50px;
+                margin-bottom: 30px;
             }
         }
     }
@@ -395,4 +398,46 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @gray-darker;
+}
+
+// COUNT DOWN
+#countdown-container {
+    margin-bottom: 20px;
+    .title {
+        color: rgba(255,255,255,0.7);
+        display: block;
+        .sans-serif-font;
+        margin-bottom: 5px;
+    }
+}
+
+#countdown .time {
+    .sans-serif-font;
+    background: rgba(0,0,0,0.7);
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    font-size: 12px;
+
+    i {
+        font-size: 20px;
+        font-style: normal;
+        display: block;
+        margin: 11px 0 -4px;
+    }
+}
+
+// AGENDA
+.agenda {
+
+    h3 { margin-bottom: 15px; }
+    li {
+        list-style: none;
+        text-align: left;
+        font-size: 16px;
+        margin: 5px 0;
+        font-weight: 300;
+    }
 }

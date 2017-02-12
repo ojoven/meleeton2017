@@ -61,4 +61,13 @@
         }
     });
 
+    /**
+    $("#countdown")
+        .countdown("2017/04/22", function(event) {
+            $(this).html(
+                event.strftime('<span class="time days"><i>%D</i> días</span> <span class="time hours"><i>%H</i> horas</span> <span class="time minutes"><i>%M</i> minutos</span> <span class="time seconds"><i>%S</i> segundos</span>')
+            );
+        });
+    **/
+
 })(jQuery); // End of use strict

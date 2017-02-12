@@ -8,7 +8,7 @@ module.exports = function (grunt) {
 		concat: {
 			dist: {
 				src: [
-					'js/src/creative.js',
+					'js/src/jquery.countdown.js',
 					'js/src/app.js'
 				],
 				dest: 'js/app.min.js'
