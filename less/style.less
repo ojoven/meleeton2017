@@ -140,7 +140,7 @@ aside {
             }
         }
     }
-    @media (max-width: 787px) {
+    @media (max-width: 767px) {
         .navbar-header .navbar-brand .logo {
             background-image: url(../img/logo_2.png);
         }
@@ -343,6 +343,21 @@ header {
     }
 }
 
+@media (max-width: 767px) {
+    .portfolio-box .portfolio-box-caption {
+        display: block;
+        position: relative;
+        opacity: 1;
+        padding: 15px;
+
+        .portfolio-box-caption-content {
+            position: relative;
+            transform: translateY(0);
+        }
+    }
+
+}
+
 .call-to-action {
     h2 {
         margin: 0 auto 20px;
@@ -448,4 +463,15 @@ body {
         margin: 5px 0;
         font-weight: 300;
     }
+}
+
+.mobile-break { display: none; }
+@media (max-width: 767px) {
+    .mobile-break { display: block; }
+}
+
+.over-button {
+    .sans-serif-font;
+    display: block;
+    margin-bottom: 5px;
 }
