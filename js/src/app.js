@@ -80,8 +80,18 @@
     var hype = 0;
     var $hypeButton = $(".hype-button");
     var $hypePopup = $('.hype-popup');
-    $hypeButton.mousedown(function(){
-        $(".hype-button").addClass("active");
+    $hypeButton.on('mousedown touchstart', function(){
+        hypeMouseDown();
+        return false;
+    }).on('mouseup touchend', function(){
+        $hypeButton.removeClass("active");
+        return false;
+    });
+
+    function hypeMouseDown() {
+        var $hypeButton = $(".hype-button");
+        var $hypePopup = $('.hype-popup');
+        $hypeButton.addClass("active");
         hype++;
         if (hype <= 8) {
             $('.hype-bar-in').css('width',(hype*10)+'%');
@@ -90,11 +100,7 @@
             $hypePopup.addClass('active');
             $('body').css('overflow', 'hidden');
         }
-        return false;
-    }).mouseup(function(){
-        $hypeButton.removeClass("active");
-        return false;
-    });
+    }
 
     $hypeButton.on('click', function() {
        return false;
@@ -121,7 +127,7 @@
                 $hypeButton.off().on('click', function() {
                     return false; // Remove bind
                 });
-                $('.hype-generator h2').html('¡GRACIAS, DE VERDAD!');
+                $('.hype-generator h2').html('¡Gracias, de verdad!');
             }
         );
     }, 2000);
