@@ -512,13 +512,45 @@ body {
         margin-left: -14px;
     }
 
-    // Link
     a {
+        color: #fff;
+        font-weight: bold;
+    }
+
+    // Link
+    .btn {
         color: @theme-primary;
         background: #fff;
         border-radius: 5px;
         font-weight: bold;
         text-decoration: none;
+    }
+
+    // STEPS
+    .step {
+        height: 130px;
+        display: none;
+        &.first-step { display: block; }
+        //&.loading { display: block; }
+        //&.last-step { display: block; }
+
+        &.loading {
+            background: url(../img/ajax-loader.gif) no-repeat center center;
+        }
+
+        &.last-step {
+
+            &:before {
+                content: "\f00d";
+                font-family: 'FontAwesome';
+                font-size: 40px;
+                display: block;
+            }
+
+            &.success:before {
+                content: "\f00c";
+            }
+        }
     }
 }
 

@@ -89,10 +89,15 @@
                 <a id="to-buy-ticket" href="#" class="btn btn-primary btn-xl">60€ | Comprar Entrada</a>
 
                 <div class="buy-ticket-info">
-                    <input type="text" id="name" placeholder="Nombre*" />
-                    <input type="number" id="amount" value="1" min="1" max="4" /><label for="amount">plaza<span class="plural"></span></label>
-                    <input type="email" id="email" placeholder="Email*" />
-                    <a href="#" id="to-reservation" class="btn">Resérvame <span class="amount">1</span> plaza<span class="plural"></span></a>
+                    <div class="step first-step">
+                        <input type="text" id="name" placeholder="Nombre*" />
+                        <input type="number" id="amount" value="1" min="1" max="4" /><label for="amount">plaza<span class="plural"></span></label>
+                        <input type="email" id="email" placeholder="Email*" />
+                        <a href="#" id="to-reservation" class="btn">Resérvame <span class="amount">1</span> plaza<span class="plural"></span></a>
+                    </div>
+                    <div class="step loading"></div>
+                    <div class="step last-step">
+                    </div>
                 </div>
 
                 <span class="below-button">* Incluye alojamiento, desayuno, regalos y premios.<br>Comidas y cena aparte.</span>
@@ -292,6 +297,7 @@
         </div>
     </section>
 
+    <!--
     <aside class="bg-primary hype-generator">
         <div class="container text-center">
             <div class="call-to-action">
@@ -309,6 +315,7 @@
             </div>
         </div>
     </aside>
+    -->
 
     <div class="hype-popup">
 
