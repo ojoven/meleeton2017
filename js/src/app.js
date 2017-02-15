@@ -117,6 +117,8 @@
             }
 
         });
+
+        return false;
     });
 
     // HYPE GENERATOR
