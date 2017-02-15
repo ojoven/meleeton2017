@@ -493,7 +493,7 @@ body {
     background: @theme-primary;
     border-radius: 3px;
     .sans-serif-font;
-    padding: 7px;
+    padding: 12px;
     position: relative;
 
     // Arrow
@@ -514,11 +514,33 @@ body {
 
     // Link
     a {
-        color: #fff;
+        color: @theme-primary;
+        background: #fff;
+        border-radius: 5px;
         font-weight: bold;
         text-decoration: none;
     }
 }
+
+// FORM
+input {
+    padding: 8px 14px;
+    .sans-serif-font;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    color: #444;
+
+    &:focus {
+        border: none;
+    }
+
+    &#email { width: 100%;  }
+    &#name { width: 62%; margin-right: 5%; }
+    &#amount { width: 17%; margin-right: 2%; }
+}
+
+label { width: 44px; }
 
 // HYPE GENERATOR
 .hype-generator {

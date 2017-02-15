@@ -76,6 +76,18 @@
         return false;
     });
 
+    $('#amount').on('change', function() {
+
+        var amount = $(this).val();
+        $('.amount').html(amount);
+        if (amount != 1) {
+            $('.plural' ).html('s');
+        } else {
+            $('.plural' ).html('');
+        }
+
+    });
+
     // HYPE GENERATOR
     var hype = 0;
     var $hypeButton = $(".hype-button");
