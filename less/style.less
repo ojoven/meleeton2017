@@ -22,6 +22,10 @@ hr.light {
     border-color: white;
 }
 
+hr.dark {
+    border-color: #222;
+}
+
 a {
     .transition-all;
     color: @theme-primary;
@@ -716,4 +720,22 @@ label { width: 44px; }
         }
     }
 
+}
+
+// Used as block description
+.description {
+    width: 580px;
+    max-width: 90%;
+    display: block;
+    margin: 30px auto;
+    .sans-serif-font;
+}
+
+// DISTANCES
+.distance {
+
+    > img {
+        border-radius: 50%;
+        width: 200px;
+    }
 }

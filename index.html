@@ -52,6 +52,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
+                        <a class="page-scroll" href="#agenda">Hackaton</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#agenda">Agenda</a>
                     </li>
                     <li>
@@ -70,6 +73,7 @@
         <!-- /.container-fluid -->
     </nav>
 
+    <!-- HEADER -->
     <header>
         <div class="header-content">
             <div class="header-content-inner">
@@ -82,12 +86,13 @@
                 <hr>
                 <p>
                     22 y 23 de Abril. Hackaton en una casa rural en Saubrigues, Francia.<br>
-                    30 profesionales tecnológicos y creativos trabajando juntos
+                    25 profesionales tecnológicos y creativos trabajando juntos
                 </p>
 
                 <span class="over-button">Plazas limitadas.</span>
                 <a id="to-buy-ticket" href="#" class="btn btn-primary btn-xl">60€ | Comprar Entrada</a>
 
+                <!-- BUY TICKET -->
                 <div class="buy-ticket-info">
                     <div class="step first-step">
                         <input type="text" id="name" placeholder="Nombre*" />
@@ -105,6 +110,51 @@
         </div>
     </header>
 
+    <!-- THE HACKATON -->
+    <section id="hackaton">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">El Mêléeton va a ser un hackaton...</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-bicycle text-primary sr-icons"></i>
+                        <h3>Ligero</h3>
+                        <p class="text-muted">Durante la semana ya trabajamos duro. Desarrollar un proyecto pequeño puede ser algo muy grande.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-battery-3 text-primary sr-icons"></i>
+                        <h3>Estimulante</h3>
+                        <p class="text-muted">¡BOOOM!<br>Vas a volver con las pilas cargadas y con nuevas ideas para tu día a día.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-bolt text-primary sr-icons"></i>
+                        <h3>Creativo</h3>
+                        <p class="text-muted">Y es que aquí, amigos, venimos a crear. Tormentas de ideas, prototipos, lápices y cuadernos. Traed vuestros portátiles.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Con mucho amor</h3>
+                        <p class="text-muted">Amor al trabajo bien hecho. A vivir una experiencia diferente y compartirla con personas muy interesantes. Un finde especial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGENDA -->
     <section class="bg-primary" id="agenda">
         <div class="container">
             <div class="row">
@@ -149,7 +199,8 @@
         </div>
     </section>
 
-    <section id="services">
+    <!-- ACTIVITIES -->
+    <section id="services" class="bg-dark">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -169,6 +220,13 @@
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
+                        <i class="fa fa-4x fa-bed text-primary sr-icons"></i>
+                        <h3>Relax</h3>
+                        <p class="text-muted">Sí, vamos a currar, pero habrá tiempo de tirarse en el sofá y tumbarse en la hierba. El estrés del día a día se queda fuera.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
                         <i class="fa fa-4x fa-users text-primary sr-icons"></i>
                         <h3>Friendworking</h3>
                         <p class="text-muted">Ponte al día con colegas profesionales. Comparte experiencias, proyectos. Birras y conversaciones.</p>
@@ -181,18 +239,12 @@
                         <p class="text-muted">Comidas en un restaurante del pueblo, pizzas para cenar. Desayuno con zumo de naranja. Pillando energía.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Mucho amor</h3>
-                        <p class="text-muted">Amor al trabajo bien hecho. A vivir una experiencia diferente y compartirla con personas muy interesantes. Un finde especial.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-dark padding-50" id="thehouse">
+    <!-- THE HOUSE -->
+    <section class="padding-50" id="thehouse">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -200,6 +252,32 @@
                     <hr class="primary">
                 </div>
             </div>
+
+            <!-- DISTANCES -->
+            <div class="row">
+
+                <!-- DONOSTIA -->
+                <div class="col-md-3 col-md-offset-1 text-center distance">
+                    <img src="/img/donostia.png" />
+                    <h3>Donostia</h3>
+                    <p>~1h</p>
+                </div>
+
+                <!-- PAMPLONA -->
+                <div class="col-md-4 text-center distance">
+                    <img src="/img/pamplona.png" />
+                    <h3>Pamplona</h3>
+                    <p>~1h 40min</p>
+                </div>
+
+                <!-- BILBAO -->
+                <div class="col-md-3 text-center distance">
+                    <img src="/img/bilbao.png" />
+                    <h3>Bilbao</h3>
+                    <p>~1h 50min</p>
+                </div>
+            </div>
+
         </div>
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
@@ -297,11 +375,17 @@
         </div>
     </section>
 
+    <!-- HYPE GENERATOR -->
     <!--
     <aside class="bg-primary hype-generator">
         <div class="container text-center">
             <div class="call-to-action">
-                <h2>¡Da a conocer la iniciativa!</h2>
+                <h2>Ayúdanos a dar a conocer la iniciativa</h2>
+                <hr class="dark">
+                <p class="description">
+                    Te estaríamos agradecidos si nos echaras un cable difundiendo esta iniciativa, no sólo en tus redes sociales, si no comentándolo con tus compañerxs de trabajo y amigxs a lxs que les podría interesar.
+                    <br><br>Para ayudarte hemos creado esta máquina de generar hype.
+                </p>
                 <div class="button-container">
                     <a href="#" class="btn btn-default btn-xl sr-button round-button hype-button">
                         <span class="initial">CREA HYPE</span>
