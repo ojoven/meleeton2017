@@ -50,6 +50,10 @@ p {
     margin-bottom: 20px;
 }
 
+ul {
+    padding-left: 0;
+}
+
 .bg-primary {
     background-color: @theme-primary;
 }
@@ -578,150 +582,6 @@ input {
 
 label { width: 44px; }
 
-// HYPE GENERATOR
-.hype-generator {
-
-    .button-container {
-        height: 100px;
-    }
-
-    .hype-button {
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        position: relative;
-        box-shadow: 0 6px 0 #444;
-        display: inline-block;
-        span {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-
-            &.success, &.error {
-                display: none;
-                font-size: 30px;
-            }
-        }
-
-        &.active {
-            margin-top: 6px;
-            box-shadow: none;
-        }
-    }
-
-    .hype-bar {
-        margin-top: 30px;
-        height: 16px;  /* Can be anything */
-        position: relative;
-        background: #fff;
-        border-radius: 10px;
-        padding: 0;
-
-        .hype-bar-in {
-            width: 0%;
-            display: block;
-            height: 10px;
-            border-top-right-radius: 8px;
-            border-bottom-right-radius: 8px;
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
-            background-color: rgb(43,194,83);
-            position: absolute;
-            top: 3px;
-            left: 4px;
-            overflow: hidden;
-            transition: all 0.2s linear;
-            max-width: 98.5%;
-        }
-    }
-}
-
-// HYPE POPUP
-.hype-popup {
-    visibility: hidden;
-    opacity: 0;
-    .sans-serif-font;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.8);
-    transition: all 0.5s linear;
-    z-index: 1031;
-
-    &.active {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .popup-container {
-        z-index: 1032;
-        text-align: center;
-        width: 500px;
-        background: @theme-primary;
-        color: #fff;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        padding: 30px 30px 50px;
-
-        .close-popup {
-            position: absolute;
-            color: #fff;
-            right: 15px;
-            top: 5px;
-            font-size: 20px;
-        }
-
-        h2 {
-            margin: 0 0 20px;
-        }
-    }
-
-    .hype-option {
-
-        .title {
-            display: block;
-            font-size: 12px;
-        }
-
-        // Icon
-        a {
-            color: #fff;
-            font-size: 24px;
-        }
-    }
-
-}
-
-@media (max-width:767px) {
-    .hype-popup {
-
-        .popup-container {
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            overflow-y: scroll;
-            transform: translate(0,0);
-        }
-
-        .hype-option {
-            margin-bottom: 30px;
-
-            .title {
-                width: 50%;
-                margin: 0 auto;
-            }
-        }
-    }
-
-}
-
 // Used as block description
 .description {
     width: 580px;
@@ -731,19 +591,11 @@ label { width: 44px; }
     .sans-serif-font;
 }
 
-.block-below-little-text {
-    display: block;
-    margin: 20px;
+// Cards against humanity
+sup.highlight { color: #fff; margin-left: 3px; }
+.additional-info {
+    color: #fff;
     font-size: 12px;
-    color: #999;
-    .sans-serif-font;
-}
-
-// DISTANCES
-.distance {
-
-    > img {
-        border-radius: 50%;
-        width: 200px;
-    }
+    margin-top: 10px;
+    sup { margin-right: 10px; }
 }
