@@ -8,10 +8,28 @@ module.exports = function (grunt) {
 		concat: {
 			dist: {
 				src: [
+					'js/src/vendor/jquery.min.js',
+					'js/src/vendor/bootstrap.min.js',
+					'js/src/vendor/jquery.easing.min.js',
+					'js/src/vendor/scrollreveal.min.js',
 					'js/src/jquery.countdown.js',
 					'js/src/app.js'
 				],
 				dest: 'js/app.min.js'
+			}
+		},
+		uglify: {
+			my_target : {
+				options : {
+					sourceMap : false,
+					sourceMapName : 'sourceMap.map'
+				},
+				// We'll be using a common JS for all the sites
+				files : {
+					'js/app.min.js' : [
+						'js/app.min.js'
+					]
+				}
 			}
 		},
 		less: {
@@ -36,7 +54,9 @@ module.exports = function (grunt) {
 	});
 
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
+	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 
 	grunt.registerTask( 'default', ['concat', 'less', 'watch'] );
+	grunt.registerTask( 'deploy', ['concat', 'uglify','less', 'watch'] );
 
 };
