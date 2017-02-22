@@ -88,8 +88,14 @@
             if (response.success) {
                 $lastStep.addClass('success').html('¡Genial! Hemos recibido tu reserva,<br>nos pondremos en contacto contigo en los próximos días.');
             } else {
-                $lastStep.addClass('error').html('Parece que hubo algún error.<br>Por favor, contacta con <a href="http://twitter.com/ojoven" target="_blank">http://twitter.com/ojoven</a>');
+                $lastStep.addClass('error').html('Oooops, no validado o hubo algún error.<br>Por favor, <a href="#" id="go-back">prueba de nuevo</a> o contacta con <a href="http://twitter.com/the_melee" target="_blank">http://twitter.com/the_melee</a>');
             }
+
+            $('#go-back').off().on('click', function() {
+                $lastStep.html('').hide();
+                $firstStep.show();
+                return false;
+            });
 
         });
 

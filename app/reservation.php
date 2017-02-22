@@ -15,7 +15,9 @@ $client = SesClient::factory(array(
 
 // We get the params
 $params = $_POST;
-if (!isset($params['amount']) || !isset($params['name']) || !isset($params['email'])) { // Wooo, such validation!
+if (!isset($params['amount']) || !isset($params['name']) || !isset($params['email'])
+|| trim($params['amount']) == '' || trim($params['name']) == '' || trim($params['email']) == ''
+|| filter_var($params['email'], FILTER_VALIDATE_EMAIL) === false) {
 	$response['success'] = false;
 } else {
 
